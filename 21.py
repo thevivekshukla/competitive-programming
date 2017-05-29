@@ -2,14 +2,14 @@
 
 li = [[], [], [], [], []]
 
-b_li = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+#b_li = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 
 for i in range(5):
   li[i] = list(map(int, input().split()))
 
 c = 0
 r = 0
-count = 0
+# count = 0
 
 for i in range(5):
   for j in range(5):
@@ -18,29 +18,32 @@ for i in range(5):
       c = j
 
 
-while li != b_li:
-  if r>2:
-    li[r][c]=0
-    r-=1
-    li[r][c]=1
-    count+=1
-  elif r<2:
-    li[r][c]=0
-    r+=1
-    li[r][c]=1
-    count+=1
+print(abs(2-r)+abs(2-c))
 
 
-  if c>2:
-    li[r][c]=0
-    c-=1
-    li[r][c]=1
-    count+=1
-  elif c<2:
-    li[r][c]=0
-    c+=1
-    li[r][c]=1
-    count+=1
+# while li != b_li:
+#   if r>2:
+#     li[r][c]=0
+#     r-=1
+#     li[r][c]=1
+#     count+=1
+#   elif r<2:
+#     li[r][c]=0
+#     r+=1
+#     li[r][c]=1
+#     count+=1
 
 
-print(count)
+#   if c>2:
+#     li[r][c]=0
+#     c-=1
+#     li[r][c]=1
+#     count+=1
+#   elif c<2:
+#     li[r][c]=0
+#     c+=1
+#     li[r][c]=1
+#     count+=1
+
+
+# print(count)
