@@ -23,6 +23,3 @@ for k in range(0, m-n+1):
 
 
 print(best)
-
-
-
